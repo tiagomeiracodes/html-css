@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+</head>
+<body>
+    <h1>Listas</h1>
+
+    <h2>Listas Ordenadas</h2>
+    <p>Ordem dos irmaos mais velhos da minha familia:</p>
+    <ol type="1"><!-- 1 A a I i --> 
+        <li>Jessica</li>
+        <li>Felipe</li>
+        <li>Mateus</li>
+        <li>Tiago</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <p>Comidas boas</p>
+    <ul type="circle"><!-- disc circle square -->
+        <li>Pizza</li>
+        <li>Bolo</li>
+        <li>Cimento</li>
+        <li>Lasanha</li>
+    </ul>
+    
+    
+<h2>Misturando as coisas</h2>
+<p>podemos tambem criar listas mistas, configurando listas dentro de outras listas. Veja o exemplo</p>
+<ol>
+    <li>animes antgos</li>
+        <ul type="square">
+            <li>Dragon Ball</li>
+            <li>Naruto</li>
+            <li>Bleach</li>
+        </ul> 
+    <li>animes novos</li>
+        <ul type="square">
+            <li>Demon Slayer</li>
+            <li>Nanatsu no Taizai</li>
+            <li>Jujutsu Kayzen</li>
+        </ul>
+</ol>
+<p>acima temos listas não ordenadas dentro de ordenadas, agora veremos listas ordenadas dentro de não ordenadas.</p>
+<ul type="disc">
+    <li>animes antigos</li>
+        <ol>
+            <li>Dragon Ball</li>
+                <ul>
+                    <li>Dragon Ball Super</li>
+                    <li>Drangon Ball Z</li>
+                </ul>
+            <li>Naruto</li>
+                <ul>
+                    <li>Shipuden</li>
+                    <li>Clasico</li>
+                </ul>
+            <li>Bleach</li>
+        </ol>
+    <li>animes novos</li>
+        <ol type="disc" start="4">
+            <li>Demon Slayer</li>
+            <li>Nanatsu no Taizai</li>
+            <li>Jujutsu Kayzen</li>
+        </ol>
+</ul>
+<h2>Lista de Definição</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para criação do conteudo de um site</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+</dl>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: white
+        }
+
+        div {
+            font-weight: bolder;
+        }
+        /* Tudo dentro da div está em super negrito */
+
+        div > p {
+            font-weight: bolder;
+            display: none;
+            background-color: white;
+            width: 150px;
+        }
+        /* todo <p> dentro da div está:
+            °super negrito
+            °oculto
+            °fundo branco
+            °largura 150px */
+
+        div:hover > p {
+            display: block;
+        }
+        /* quando passar o mouse por cima da div "Menu" o display que estava bloquado, ira desbloquear, mostrando os <p>*/
+    </style>
+</head>
+<body>
+    <h1>Mercado Livre</h1>
+    <div>
+        Menu
+        <p>moveis</p>
+        <p>comida</p>
+        <p>dispositivos</p>
+        <p>automoveis</p>
+        <p>livros</p>
+
+    </div>
+</body>
+</html>
